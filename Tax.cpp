@@ -70,7 +70,6 @@ int main(){
     taxableIncome = (grossIncome < deduction) ? 0 : grossIncome - deduction ; 
     taxOwed = calcTaxes(taxableIncome, married);
     netIncome = taxableIncome - taxOwed + deduction;
-    //cout << "Taxable: " << taxableIncome <<" "<< "Net: " << netIncome << " "<< "Tax: " << taxOwed << endl;
     cout << "You will pay $" << decimalFormat(taxOwed) << " in taxes " << endl;
     cout << "Your take home pay after tax will be $" << decimalFormat(netIncome) << endl;
     std::cout << std::setprecision(2) << std::fixed;
